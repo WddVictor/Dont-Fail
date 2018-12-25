@@ -199,7 +199,6 @@
      <Compile Include="Assets\Scripts\Battle\DataPool.cs" />
      <Compile Include="Assets\Scripts\Battle\DesCard.cs" />
      <Compile Include="Assets\Scripts\Buffs\Buff.cs" />
-     <Compile Include="Assets\Scripts\Buffs\TestBuff.cs" />
      <Compile Include="Assets\Scripts\Cards\Card.cs" />
      <Compile Include="Assets\Scripts\Cards\Card01.cs" />
      <Compile Include="Assets\Scripts\Cards\Card02.cs" />
