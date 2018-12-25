@@ -53,9 +53,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: ef6a44b00d8c840c1b385ca5e85e8155, type: 2}
   mSprites:
-  - name: BeerBottle
-    x: 513
-    y: 175
+  - name: Beer
+    x: 1313
+    y: 687
     width: 68
     height: 172
     borderLeft: 0
@@ -66,9 +66,22 @@ MonoBehaviour:
     paddingRight: 66
     paddingTop: 12
     paddingBottom: 16
-  - name: cola
-    x: 513
-    y: 348
+  - name: ChiliSauce
+    x: 0
+    y: 512
+    width: 260
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 126
+    paddingRight: 126
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Cocacola
+    x: 1313
+    y: 860
     width: 92
     height: 164
     borderLeft: 0
@@ -79,22 +92,61 @@ MonoBehaviour:
     paddingRight: 54
     paddingTop: 18
     paddingBottom: 18
-  - name: used
-    x: 0
-    y: 0
-    width: 512
+  - name: EnergyDrink
+    x: 1100
+    y: 512
+    width: 212
     height: 512
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
+    paddingLeft: 150
+    paddingRight: 150
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Mustard
+    x: 867
+    y: 512
+    width: 232
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 140
+    paddingRight: 140
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Pepsi
+    x: 261
+    y: 512
+    width: 314
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 99
+    paddingRight: 99
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Poison
+    x: 576
+    y: 512
+    width: 290
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 111
+    paddingRight: 111
     paddingTop: 0
     paddingBottom: 0
   - name: Water
-    x: 582
-    y: 171
+    x: 1313
+    y: 510
     width: 60
     height: 176
     borderLeft: 0

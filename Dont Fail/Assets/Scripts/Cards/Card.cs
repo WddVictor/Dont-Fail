@@ -140,13 +140,13 @@ public abstract class Card : MonoBehaviour {
 
 	//给玩家加护盾
 	public void shieldPlayer(){
-		BattleControler.player.recieveShield(getActuralShield());
+		BattleControler.player.receiveShield(getActuralShield());
 	}
 
 
 	//造成伤害，可被护盾抵消
 	public void attackMonster(){
-		BattleControler.monster.recieveDamage(-getActuralDamage());
+		BattleControler.monster.receiveDamage(getActuralDamage());
 	}
 
 	//真实伤害，无视护盾
@@ -156,13 +156,13 @@ public abstract class Card : MonoBehaviour {
 
 	//获得由力量加成或者buff加成后的伤害
 	private int getActuralDamage(){
-		int actural_damage = BattleControler.player.strength+_damage;
+		int actural_damage = BattleControler.player.getStrength()+_damage;
 		return actural_damage;
 	}
 
 	//获得由智力加成或者buff加成后的伤害
 	private int getActuralShield(){
-		int actural_shield = BattleControler.player.intelligence+_shield;
+		int actural_shield = BattleControler.player.getIntelligence()+_shield;
 		return actural_shield;
 	}
 	//出牌的逻辑应当在每张牌的play中写好，默认的敌人是monster

@@ -12,6 +12,7 @@ public abstract class Buff : MonoBehaviour {
 	//该角色的敌人
 	protected Role _enemy;
 	protected int _level;
+	protected int _enableTurns;
 
 	void Awake(){
 		this._host = hostObject.GetComponent<Role>();
@@ -35,7 +36,9 @@ public abstract class Buff : MonoBehaviour {
 	public int getLevel(){
 		return this._level;
 	}
-
+	public int getEnableTurns(){
+		return this._enableTurns;
+	}
 	public int getId(){
 		return this._id;
 	}

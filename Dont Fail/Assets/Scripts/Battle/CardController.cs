@@ -150,6 +150,7 @@ public class CardController : MonoBehaviour
             usedCard.Add(myCardList[0]);
             myCardList.RemoveAt(0);
         }
+        ShuffleCards();
 
         newCardLabel.text = unUsedCard.Count.ToString();
         usedCardLabel.text = usedCard.Count.ToString();

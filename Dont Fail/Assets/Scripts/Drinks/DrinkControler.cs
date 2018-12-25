@@ -5,9 +5,10 @@ using UnityEngine;
 public class DrinkControler : MonoBehaviour {
     
     public GameObject[] drinks;
-
+    private int i = 0;
     public void obtainDrink(){
-        string drinkName="Cola";
+        i = (i+1)%8;
+        string drinkName=Drink.drinksLibrary[i];
         var type = System.Type.GetType(drinkName);
         if(type==null){
             return;

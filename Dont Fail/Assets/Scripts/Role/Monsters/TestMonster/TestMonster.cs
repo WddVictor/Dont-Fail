@@ -9,10 +9,6 @@ public class TestMonster : Monster {
 	}
 
 	public override void attackPlayer(int damage){
-		BattleControler.player.recieveDamage(-damage);
-	}
-
-	public override void recieveShield(int offset){
-		this.increaseShield(offset);
+		BattleControler.player.receiveDamage(damage);
 	}
 }

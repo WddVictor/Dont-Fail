@@ -17,11 +17,11 @@ public class ShieldAction : Action {
 	}
 
 	public override void behave(){
-		BattleControler.monster.recieveShield(getActuralShield());
+		BattleControler.monster.receiveShield(getActuralShield());
 	}
 
 	private int getActuralShield(){
-		int actural_shield = BattleControler.monster.intelligence+_shield;
+		int actural_shield = BattleControler.monster.getIntelligence()+_shield;
 		return actural_shield;
 	}
 

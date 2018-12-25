@@ -20,7 +20,7 @@ public class AttackAction : Action {
 	}
 
 	private int getActuralDamage(){
-		int actural_damage = BattleControler.monster.strength+_damage;
+		int actural_damage = BattleControler.monster.getStrength()+_damage;
 		return actural_damage;
 	}
 

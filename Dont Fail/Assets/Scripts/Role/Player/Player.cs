@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Player : Role {
 
-	public int _usableMp = 3;
-	public int _totalMp = 3;
+	private int _usableMp = 3;
+	private int _totalMp = 3;
+	private int _coins;
 
 	//显示能量的label
 	public UILabel mpLabel;
+	public UILabel coinLabel;
 	
 	//自己的牌库
 	private Card[] libarary;
@@ -25,13 +27,18 @@ public class Player : Role {
 	{	
 		base.Start();
 		initMp();
-		showMp();	
+		setCoin(99);
 	}
 	
 	//战斗开始时使可用能量等于总能量
 	public void initMp(){
 		_usableMp = _totalMp;
 		showMp();
+	}
+
+	public void setCoin(int coins){
+		this._coins = coins;
+		showCoin();
 	}
 
 	public int getUsableMp(){
@@ -45,10 +52,7 @@ public class Player : Role {
 		}
 		showMp();
 	}
-	//自己获得护盾时调用
-	public override void recieveShield(int offset){
-		this.increaseShield(offset);
-	}
+
 	//增加自己总能量并显示
 	public void increaseTotalMp(int offset){
 		_totalMp += offset;
@@ -58,9 +62,15 @@ public class Player : Role {
 		showMp();
 	}
 	//显示自己的总能量到界面
-	public void showMp(){
+	private void showMp(){
 		if(this.mpLabel){
 			this.mpLabel.text= _usableMp+"/"+_totalMp;
+		}
+	}
+
+	private void showCoin(){
+		if(this.coinLabel){
+			this.coinLabel.text= this._coins+"";
 		}
 	}
 

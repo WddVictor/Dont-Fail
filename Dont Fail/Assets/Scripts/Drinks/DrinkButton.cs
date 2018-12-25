@@ -8,6 +8,4 @@ public class DrinkButton : MonoBehaviour {
         this.GetComponent<Drink>().enable();
         this.gameObject.SetActive(false);
     }
-    
-
 }

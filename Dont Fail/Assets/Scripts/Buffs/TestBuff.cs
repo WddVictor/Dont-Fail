@@ -2,15 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestBuff : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+public class TestBuff : Buff {
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
